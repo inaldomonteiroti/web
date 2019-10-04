@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>CRM - Seja Bemvindo</title>
+        <title>CRM - Seja Bem Vindo</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -65,6 +65,8 @@
     </head>
     <body>
         <div class="flex-center position-ref full-height">
+                
+
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -72,7 +74,7 @@
                         <a href="{{ route('register') }}">Crie uma conta no sistema</a>
                     @else
                         <a href="{{ route('login') }}">Faça o Login no Sistema</a>
-                        <a href="{{ route('register') }}">Crie uma conta no sistema</a>
+                        
                         @if (Route::has('register'))
                            
                         @endif
@@ -86,7 +88,7 @@
                 </div>
 
                 <div class="links">
-                    <h2> Gestão de Relacionamento com o Cliente </h2>
+                    <h2> Gestão de Relacionamento com o Cliente </h2>                    
                     {{-- <a href="https://laravel.com/docs">Docs</a>
                     <a href="https://laracasts.com">Laracasts</a>
                     <a href="https://laravel-news.com">News</a>
@@ -98,5 +100,6 @@
                 </div>
             </div>
         </div>
+        
     </body>
 </html>

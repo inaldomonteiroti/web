@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Registrar-se no CRM') }}</div>
+                <div class="card-header">{{ __('Registro de Usuários no CRM') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -25,6 +25,8 @@
                             </div>
                         </div>
 
+                        
+
                         <div class="form-group row">
                             <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('Endereço de E-mail') }}</label>
 
@@ -36,6 +38,17 @@
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="cargo" class="col-md-4 col-form-label text-md-right">Cargo</label>
+                            <div class="col-md-6">                              
+                              <select class="form-control" name="cargo">                              
+                                <option value="Supervisor">Supervisor</option>
+                                <option value="Coordenador">Coordenador</option>                                
+                                <option value="Consultor">Consultor</option>
+                              </select>
                             </div>
                         </div>
 
