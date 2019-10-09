@@ -18,7 +18,7 @@ class UsuarioController extends Controller
     {
         $this->authorize('update', Usuario::class);
  
-        $usuario = Usuario::find($id);
+        $usuario = User::find($id);
         return view('usuarios.editar', compact('usuario'));
     }
  
@@ -27,7 +27,7 @@ class UsuarioController extends Controller
         $this->authorize('update', Usuario::class);
          
         $dados = $request->all();
-        $usuario = Usuario::find($id);
+        $usuario = User::find($id);
  
         if(!$dados['senha']){
             $senha_antiga = $usuario->senha;
@@ -50,9 +50,8 @@ class UsuarioController extends Controller
     public function salvar(Request $request)
     {
         $dados = $request->all();
-        $dados['senha'] = bcrypt($dados['senha']);
-        Usuario::create($dados);
+        User::create($dados);
  
-        return redirect()->route('home');
+        return redirect()->route('listar');
     }
 }

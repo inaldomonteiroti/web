@@ -44,7 +44,8 @@
                         <div class="form-group row">
                             <label for="cargo" class="col-md-4 col-form-label text-md-right">Cargo</label>
                             <div class="col-md-6">                              
-                              <select class="form-control" name="cargo">                              
+                              <select class="form-control" name="cargo">
+                                    <option value="Administrador">Administrador</option>                              
                                 <option value="Supervisor">Supervisor</option>
                                 <option value="Coordenador">Coordenador</option>                                
                                 <option value="Consultor">Consultor</option>
@@ -57,12 +58,6 @@
 
                             <div class="col-md-6">
                                 <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
                             </div>
                         </div>
 

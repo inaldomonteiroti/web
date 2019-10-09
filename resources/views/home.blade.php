@@ -9,12 +9,13 @@
                     CRMenu
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="{{route('listar') }}">Usuário do Sistema</a>
-                  <a class="dropdown-item" href="#">Vendas</a>
-                  <a class="dropdown-item" href="#">Promoções</a></div>
+                    <a class="dropdown-item" href="{{route('listar') }}">Usuário do Sistema</a>
+                    <a class="dropdown-item" href="#">Vendas</a>
+                    <a class="dropdown-item" href="#">Promoções</a>
+                  </div>
                
                     
-                    </div>
+                </div>
                   
 
                 <div class="card-body">

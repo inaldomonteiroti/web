@@ -42,10 +42,10 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <!-- Authentication Links -->
-                        @guest
-                            {{-- <li class="nav-item">
+                        {{-- @guest
+                            <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-                            </li> --}}
+                            </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
@@ -69,15 +69,13 @@
                                     </form>
                                 </div>
                             </li>
-                        @endguest
+                        @endguest --}}
                     </ul>                   
                 </div>                
             </div>
             
         </nav>
-        <nav class="navbar navbar-dark bg-dark">
-                  <!-- Conteúdo do navbar -->
-                </nav>
+       
        
         
 
@@ -85,48 +83,6 @@
             @yield('content')
         </main>
     </div>
-    {{-- <footer class="container py-5">
-        <div class="row">
-          
-          <div class="col-6 col-md">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Algo legal</a></li>
-              <li><a class="text-muted" href="#">Feature aleatória</a></li>
-              <li><a class="text-muted" href="#">Recursos para times</a></li>
-              <li><a class="text-muted" href="#">Coisas para desenvolvedores</a></li>
-              <li><a class="text-muted" href="#">Outra coisa legal</a></li>
-              <li><a class="text-muted" href="#">Último item</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Fontes</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Fonte</a></li>
-              <li><a class="text-muted" href="#">Nome da fonte</a></li>
-              <li><a class="text-muted" href="#">Outra fonte</a></li>
-              <li><a class="text-muted" href="#">Fonte final</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Fontes</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Negócios</a></li>
-              <li><a class="text-muted" href="#">Educação</a></li>
-              <li><a class="text-muted" href="#">Governo</a></li>
-              <li><a class="text-muted" href="#">Jogos</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Sobre</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Equipe</a></li>
-              <li><a class="text-muted" href="#">Locais</a></li>
-              <li><a class="text-muted" href="#">Privacidade</a></li>
-              <li><a class="text-muted" href="#">Termos</a></li>
-            </ul>
-          </div>
-        </div>
-      </footer> --}}
+    
 </body>
 </html>
