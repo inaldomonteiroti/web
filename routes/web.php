@@ -36,7 +36,7 @@ Route::get('/logout', 'AutenticacaoController@logout')->name('logout');
 
 
 Route::get('/usuarios/{id}/editar', 'UsuarioController@editar')->name('editar');
-
+Route::post('/usuarios/{id}/atualizar', 'UsuarioController@atualizar')->name('atualizar');
 
 
 

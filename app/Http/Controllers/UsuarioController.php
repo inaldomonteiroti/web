@@ -16,7 +16,7 @@ class UsuarioController extends Controller
  
     public function editar($id)
     {
-        $this->authorize('update', Usuario::class);
+       // $this->authorize('update', Usuario::class);
  
         $usuario = User::find($id);
         return view('usuarios.editar', compact('usuario'));
@@ -24,18 +24,18 @@ class UsuarioController extends Controller
  
     public function atualizar(Request $request, $id)
     {
-        $this->authorize('update', Usuario::class);
+        //s$this->authorize('update', Usuario::class);
          
         $dados = $request->all();
         $usuario = User::find($id);
  
-        if(!$dados['senha']){
+        if(!$dados['password']){
             $senha_antiga = $usuario->senha;
-            $dados['senha'] = $senha_antiga;
+            $dados['password'] = $senha_antiga;
             $usuario->update($dados);
         }else{
-            $senha_nova = Hash::make($dados['senha']);
-            $dados['senha'] = $senha_nova;
+            $senha_nova = Hash::make($dados['password']);
+            $dados['password'] = $senha_nova;
             $usuario->update($dados);
         }
  
