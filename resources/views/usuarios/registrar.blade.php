@@ -3,25 +3,25 @@
 @section('content')
 <div class="panel panel-default">
 
-<div class="panel-heading"><h3>Perfil do Sistema</h3></div>
+<div class="panel-heading">Perfil do Sistema</div>
 <div class="panel-body">
 <form class="form-horizontal" method="post" action="{{route ('salvar')}}">
 {{ csrf_field() }}
   <div class="form-group">
     <label for="name" class="col-sm-2 control-label">Nome</label>
-    <div class="col-sm-10">
+    <div class="col-md-6">
       <input type="text" class="form-control" name="name" placeholder="Digite seu nome">
     </div>
   </div>
   <div class="form-group">
     <label for="email" class="col-sm-2 control-label">Email</label>
-    <div class="col-sm-10">
+    <div class="col-md-6">
       <input type="email" class="form-control" name="email" placeholder="Digite seu email">
     </div>
   </div>
   <div class="form-group">
     <label for="cargo" class="col-sm-2 control-label">Cargo</label>
-    <div class="col-sm-10">
+    <div class="col-md-6">
       
       <select class="form-control" name="cargo">
         <option value="Gerente">Gerente</option>
