@@ -1,5 +1,4 @@
 @extends('layouts.app')
-
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
@@ -10,14 +9,10 @@
                   </a>
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="{{route('listar') }}">Usuário do Sistema</a>
-                    <a class="dropdown-item" href="#">Vendas</a>
-                    <a class="dropdown-item" href="#">Promoções</a>
-                  </div>
-               
-                    
-                </div>
-                  
-
+                    {{-- <a class="dropdown-item" href="#">Vendas</a>
+                    <a class="dropdown-item" href="#">Promoções</a> --}}
+                  </div>        
+                 </div>
                 <div class="card-body">
                     @if (session('status'))
                         <div class="alert alert-success" role="alert">

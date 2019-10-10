@@ -11,10 +11,10 @@ class Usuario extends Authenticatable
     use Notifiable;
      
     protected $fillable = [
-        'name', 'login', 'email', 'senha', 'cargo'
+        'name', 'login', 'email', 'password', 'cargo'
     ];
  
     protected $hidden = [
-        'senha'
+        'password'
     ];
 }

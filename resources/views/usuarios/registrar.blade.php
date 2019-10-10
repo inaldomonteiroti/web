@@ -31,29 +31,14 @@
       </select>
     </div>
   </div>
-  <hr>
-  
-  <div class="form-group row">
-      <label for="password" class="col-sm-2 control-label">{{ __('Senha') }}</label>
-
-      <div class="col-md-6">
-          <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-          @error('password')
-              <span class="invalid-feedback" role="alert">
-                  <strong>{{ $message }}</strong>
-              </span>
-          @enderror
-      </div>
+    
+  <div class="form-group">
+    <label for="password" class="col-sm-2 control-label">Senha</label>
+    <div class="col-md-6">
+      <input type="password" class="form-control" name="password" placeholder="Digite sua nova senha ">
+    </div>
   </div>
-
-  <div class="form-group row">
-      <label for="password-confirm" class="col-sm-2 control-label">{{ __('Confirme a Senha') }}</label>
-
-      <div class="col-md-6">
-          <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-      </div>
-  </div>
+   
   <div class="form-group">
     <div class="col-sm-offset-2 col-sm-10">
         <button type="reset" class="btn btn-default">Cancelar</button>

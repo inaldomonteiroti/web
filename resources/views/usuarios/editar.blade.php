@@ -23,19 +23,18 @@
     <label for="cargo" class="col-sm-2 control-label">Cargo</label>
     <div class="col-sm-10">
       <select class="form-control" name="cargo" value="{{$usuario->cargo}}">
-        <option {{($usuario->cargo == 'Gerente'  ? 'selected' : '')}}>Atendente</option>
-        <option {{($usuario->cargo == 'Coordenador'  ? 'selected' : '')}}>Coordenador</option>
-        <option {{($usuario->cargo == 'Consultor'  ? 'selected' : '')}}>Consultor</option>
+        <option {{($usuario->cargo == 'Administrador'  ? 'selected' : '')}}>Administrador</option>
         <option {{($usuario->cargo == 'Supervisor'  ? 'selected' : '')}}>Supervisor</option>
+        <option {{($usuario->cargo == 'Coordenador'  ? 'selected' : '')}}>Coordenador</option>
+        <option {{($usuario->cargo == 'Consultor'  ? 'selected' : '')}}>Consultor</option>        
       </select>
     </div>
   </div>
-  <hr>
-  
+  <hr>  
   <div class="form-group">
     <label for="password" class="col-sm-2 control-label">Senha</label>
     <div class="col-sm-10">
-      <input type="password" class="form-control" name="password" placeholder="Digite sua nova senha ou deixe em branco para manter a antiga">
+      <input type="password" class="form-control" name="password" placeholder="Digite sua nova senha ">
     </div>
   </div>
   <div class="form-group">

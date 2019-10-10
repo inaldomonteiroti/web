@@ -1,7 +1,7 @@
 @extends('shared.base')
 @section('content')
     <div class="panel panel-default">    
-        <div class="panel-heading" ">Usuários</div>         
+        <div class="panel-heading">Usuários</div>         
         <a id="btnadic" class="btn btn-primary" href="{{ route('registrar') }}">{{ __('Adicionar Usuário') }}</a>
         <style type="text/css">
            #btnadic{
@@ -15,7 +15,6 @@
                         <tr>
                             <th>Nome</th>
                             <th>E-mail</th>
-                            {{-- <th>Login</th> --}}
                             <th>Cargo</th>
                             <th>Criado</th>
                             <th>Ultimo login</th>
@@ -27,12 +26,12 @@
                             <tr>
                                 <td>{{$usuario->name}}</td>
                                 <td>{{$usuario->email}}</td>
-                                {{-- <td>{{$usuario->login}}</td> --}}
                                 <td>{{$usuario->cargo}}</td>
                                 <td>{{$usuario->created_at}}</td>
                                 <td>{{$usuario->updated_at}}</td>
                                 <td>                                   
-                                    <a href="{{route('editar', $usuario->id)}}"><i class="glyphicon glyphicon-pencil"></i></a>                                         
+                                    <a href="{{route('editar', $usuario->id)}}"><i class="glyphicon glyphicon-pencil"></i></a>
+                                    <a href="{{route('deletar', $usuario->id)}}"><i class="glyphicon glyphicon-trash"></i></a>                                          
                                 </td>                                
                             </tr>                         
                         @endforeach                                 
